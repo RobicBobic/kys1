@@ -179,6 +179,36 @@ const MemeCoinTracker = () => {
 
   return (
     <div className="min-h-screen bg-black text-emerald-400 font-mono p-4">
+      {/* Twitter Link - Top Right Corner */}
+      <div className="fixed top-4 right-4 z-50">
+        <a 
+          href="https://x.com/DeezNutsTrak" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="bg-emerald-400 text-black px-6 py-3 rounded-lg font-bold text-lg hover:bg-emerald-300 transition-colors flex items-center gap-2 shadow-lg"
+        >
+          <span className="text-xl">🐦</span>
+          Follow Twitter
+        </a>
+      </div>
+
+      {/* Big Bonk Trading Link */}
+      <div className="border-2 border-emerald-400 mb-6 p-6 bg-emerald-900 bg-opacity-20 text-center">
+        <h2 className="text-2xl font-bold mb-4 text-emerald-300">🥜 Trade DeezNuts! 🥜</h2>
+        <div className="flex justify-center">
+          <a 
+            href="https://letsbonk.fun/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-emerald-400 text-black px-8 py-4 rounded-lg font-bold text-xl hover:bg-emerald-300 transition-colors flex items-center gap-3 shadow-lg"
+          >
+            <span className="text-2xl">🚀</span>
+            Trade on Bonk
+          </a>
+        </div>
+        <p className="text-emerald-200 mt-4 text-lg">Start trading DeezNuts now!</p>
+      </div>
+
       {/* CA Address Bar */}
       <div className="border-2 border-emerald-400 mb-4 p-3 bg-emerald-900 bg-opacity-20">
         <div className="text-center">
