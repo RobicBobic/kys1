@@ -40,11 +40,11 @@ const MemeCoinTracker = () => {
   const [activeTab, setActiveTab] = useState('nuts');
   const [bubbles, setBubbles] = useState([]);
 
-  // Nut emojis for variety
-  const nutEmojis = ['🥜', '🌰', '🥥', '🫘'];
-
   // Simulate realistic meme coin launch behavior
   useEffect(() => {
+    // Nut emojis for variety - moved inside useEffect to fix dependency warning
+    const nutEmojis = ['🥜', '🌰', '🥥', '🫘'];
+    
     const interval = setInterval(() => {
       // Simulate realistic market behavior
       const random = Math.random();
@@ -140,7 +140,7 @@ const MemeCoinTracker = () => {
     }, 2500); // Update every 2.5 seconds for more realistic pacing
 
     return () => clearInterval(interval);
-  }, []);
+  }, []); // Empty dependency array is now correct
 
   const generateRandomWallet = () => {
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
